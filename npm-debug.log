@@ -1,0 +1,229 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/node',
+1 verbose cli   '/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'jscs',
+1 verbose cli   'esprima-fb' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /Users/jamesblack/src/emptyclipgaming/game/package.json
+5 warn package.json game@0.0.0 No repository field.
+6 warn package.json game@0.0.0 No README data
+7 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/babel-core/package.json
+8 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/babel-loader/package.json
+9 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/babylon/package.json
+10 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/css-loader/package.json
+11 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/eslint/package.json
+12 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/eslint-plugin-react/package.json
+13 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/express/package.json
+14 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/http-proxy/package.json
+15 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/node-libs-browser/package.json
+16 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/react/package.json
+17 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/react-router/package.json
+18 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/style-loader/package.json
+19 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/webpack/package.json
+20 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/webpack-dev-server/package.json
+21 verbose readDependencies loading dependencies from /Users/jamesblack/src/emptyclipgaming/game/package.json
+22 silly cache add args [ 'jscs', null ]
+23 verbose cache add spec jscs
+24 silly cache add args [ 'esprima-fb', null ]
+25 verbose cache add spec esprima-fb
+26 silly cache add parsed spec { raw: 'jscs',
+26 silly cache add   scope: null,
+26 silly cache add   name: 'jscs',
+26 silly cache add   rawSpec: '',
+26 silly cache add   spec: '*',
+26 silly cache add   type: 'range' }
+27 silly addNamed jscs@*
+28 verbose addNamed "*" is a valid semver range for jscs
+29 silly addNameRange { name: 'jscs', range: '*', hasData: false }
+30 silly mapToRegistry name jscs
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/jscs
+34 verbose addNameRange registry:https://registry.npmjs.org/jscs not in flight; fetching
+35 silly cache add parsed spec { raw: 'esprima-fb',
+35 silly cache add   scope: null,
+35 silly cache add   name: 'esprima-fb',
+35 silly cache add   rawSpec: '',
+35 silly cache add   spec: '*',
+35 silly cache add   type: 'range' }
+36 silly addNamed esprima-fb@*
+37 verbose addNamed "*" is a valid semver range for esprima-fb
+38 silly addNameRange { name: 'esprima-fb', range: '*', hasData: false }
+39 silly mapToRegistry name esprima-fb
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/esprima-fb
+43 verbose addNameRange registry:https://registry.npmjs.org/esprima-fb not in flight; fetching
+44 verbose request uri https://registry.npmjs.org/jscs
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 1:04:13 PM
+47 verbose request id cb69ea1b30695d26
+48 http request GET https://registry.npmjs.org/jscs
+49 verbose request uri https://registry.npmjs.org/esprima-fb
+50 verbose request no auth needed
+51 info attempt registry request try #1 at 1:04:13 PM
+52 verbose etag "85UWFJYL0GWZ7RFK40KJ9SJSN"
+53 http request GET https://registry.npmjs.org/esprima-fb
+54 http 304 https://registry.npmjs.org/esprima-fb
+55 silly get cb [ 304,
+55 silly get   { date: 'Tue, 21 Jul 2015 19:04:06 GMT',
+55 silly get     via: '1.1 varnish',
+55 silly get     'cache-control': 'max-age=60',
+55 silly get     etag: '"85UWFJYL0GWZ7RFK40KJ9SJSN"',
+55 silly get     age: '32',
+55 silly get     connection: 'keep-alive',
+55 silly get     'x-served-by': 'cache-lax1424-LAX',
+55 silly get     'x-cache': 'HIT',
+55 silly get     'x-cache-hits': '2',
+55 silly get     'x-timer': 'S1437505446.846584,VS0,VE0',
+55 silly get     vary: 'Accept' } ]
+56 verbose etag https://registry.npmjs.org/esprima-fb from cache
+57 verbose get saving esprima-fb to /Users/jamesblack/.npm/registry.npmjs.org/esprima-fb/.cache.json
+58 silly addNameRange number 2 { name: 'esprima-fb', range: '*', hasData: true }
+59 silly addNameRange versions [ 'esprima-fb',
+59 silly addNameRange   [ '1001.1001.1000-dev-harmony-fb',
+59 silly addNameRange     '1001.1001.1001-dev-harmony-fb',
+59 silly addNameRange     '1001.1001.2000-dev-harmony-fb',
+59 silly addNameRange     '2001.1001.2000-dev-harmony-fb',
+59 silly addNameRange     '2001.1001.0-dev-harmony-fb',
+59 silly addNameRange     '3001.1.0-dev-harmony-fb',
+59 silly addNameRange     '4001.1.0-dev-harmony-fb',
+59 silly addNameRange     '4001.1001.0-dev-harmony-fb',
+59 silly addNameRange     '4001.3001.0-dev-harmony-fb',
+59 silly addNameRange     '5001.1.0-dev-harmony-fb',
+59 silly addNameRange     '6001.1.0-dev-harmony-fb',
+59 silly addNameRange     '6001.1001.0-dev-harmony-fb',
+59 silly addNameRange     '7001.1.0-dev-harmony-fb',
+59 silly addNameRange     '8001.1.0-dev-harmony-fb',
+59 silly addNameRange     '8001.1001.0-dev-harmony-fb',
+59 silly addNameRange     '8001.2001.0-dev-harmony-fb',
+59 silly addNameRange     '9001.1.0-dev-harmony-fb',
+59 silly addNameRange     '10001.1.0-dev-harmony-fb',
+59 silly addNameRange     '11001.1.0-dev-harmony-fb',
+59 silly addNameRange     '12001.1.0-dev-harmony-fb',
+59 silly addNameRange     '13001.1.0-dev-harmony-fb',
+59 silly addNameRange     '13001.1001.0-dev-harmony-fb',
+59 silly addNameRange     '14001.1.0-dev-harmony-fb',
+59 silly addNameRange     '15001.1.0-dev-harmony-fb' ] ]
+60 http 200 https://registry.npmjs.org/jscs
+61 silly get cb [ 200,
+61 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+61 silly get     etag: '"4HANWW0K4AROSTKFY2UN59X0S"',
+61 silly get     'content-type': 'application/json',
+61 silly get     'cache-control': 'max-age=60',
+61 silly get     'content-length': '120177',
+61 silly get     'accept-ranges': 'bytes',
+61 silly get     date: 'Tue, 21 Jul 2015 19:04:06 GMT',
+61 silly get     via: '1.1 varnish',
+61 silly get     age: '0',
+61 silly get     connection: 'keep-alive',
+61 silly get     'x-served-by': 'cache-lax1434-LAX',
+61 silly get     'x-cache': 'HIT',
+61 silly get     'x-cache-hits': '1',
+61 silly get     'x-timer': 'S1437505446.847996,VS0,VE47',
+61 silly get     vary: 'Accept' } ]
+62 verbose get saving jscs to /Users/jamesblack/.npm/registry.npmjs.org/jscs/.cache.json
+63 silly addNameRange number 2 { name: 'jscs', range: '*', hasData: true }
+64 silly addNameRange versions [ 'jscs',
+64 silly addNameRange   [ '0.0.1',
+64 silly addNameRange     '0.0.2',
+64 silly addNameRange     '0.0.3',
+64 silly addNameRange     '0.0.4',
+64 silly addNameRange     '0.0.5',
+64 silly addNameRange     '0.0.6',
+64 silly addNameRange     '0.0.7',
+64 silly addNameRange     '0.0.8',
+64 silly addNameRange     '0.0.9',
+64 silly addNameRange     '0.0.10',
+64 silly addNameRange     '0.0.11',
+64 silly addNameRange     '0.0.12',
+64 silly addNameRange     '1.0.0',
+64 silly addNameRange     '1.0.1',
+64 silly addNameRange     '1.0.2',
+64 silly addNameRange     '1.0.3',
+64 silly addNameRange     '1.0.4',
+64 silly addNameRange     '1.0.5',
+64 silly addNameRange     '1.0.6',
+64 silly addNameRange     '1.0.7',
+64 silly addNameRange     '1.0.8',
+64 silly addNameRange     '1.0.10',
+64 silly addNameRange     '1.0.11',
+64 silly addNameRange     '1.0.12',
+64 silly addNameRange     '1.0.13',
+64 silly addNameRange     '1.0.14',
+64 silly addNameRange     '1.0.15',
+64 silly addNameRange     '1.1.0',
+64 silly addNameRange     '1.2.0',
+64 silly addNameRange     '1.2.1',
+64 silly addNameRange     '1.2.2',
+64 silly addNameRange     '1.2.3',
+64 silly addNameRange     '1.2.4',
+64 silly addNameRange     '1.3.0',
+64 silly addNameRange     '1.4.0',
+64 silly addNameRange     '1.4.1',
+64 silly addNameRange     '1.4.2',
+64 silly addNameRange     '1.4.3',
+64 silly addNameRange     '1.4.4',
+64 silly addNameRange     '1.4.5',
+64 silly addNameRange     '1.5.1',
+64 silly addNameRange     '1.5.2',
+64 silly addNameRange     '1.5.3',
+64 silly addNameRange     '1.5.4',
+64 silly addNameRange     '1.5.6',
+64 silly addNameRange     '1.5.7',
+64 silly addNameRange     '1.5.8',
+64 silly addNameRange     '1.5.9',
+64 silly addNameRange     '1.6.0',
+64 silly addNameRange     '1.6.1',
+64 silly addNameRange     '1.6.2',
+64 silly addNameRange     '1.7.0',
+64 silly addNameRange     '1.7.1',
+64 silly addNameRange     '1.7.2',
+64 silly addNameRange     '1.7.3',
+64 silly addNameRange     '1.8.0',
+64 silly addNameRange     '1.8.1',
+64 silly addNameRange     '1.9.0',
+64 silly addNameRange     '1.10.0',
+64 silly addNameRange     '1.11.0',
+64 silly addNameRange     '1.11.1',
+64 silly addNameRange     '1.11.2',
+64 silly addNameRange     '1.11.3',
+64 silly addNameRange     '1.12.0',
+64 silly addNameRange     '1.13.0',
+64 silly addNameRange     '1.13.1' ] ]
+65 silly addNamed jscs@1.13.1
+66 verbose addNamed "1.13.1" is a plain semver version for jscs
+67 silly cache afterAdd jscs@1.13.1
+68 verbose afterAdd /Users/jamesblack/.npm/jscs/1.13.1/package/package.json not in flight; writing
+69 verbose afterAdd /Users/jamesblack/.npm/jscs/1.13.1/package/package.json written
+70 verbose stack Error: No compatible version found: esprima-fb@'*'
+70 verbose stack Valid install targets:
+70 verbose stack ["1001.1001.1000-dev-harmony-fb","1001.1001.1001-dev-harmony-fb","1001.1001.2000-dev-harmony-fb","2001.1001.2000-dev-harmony-fb","2001.1001.0-dev-harmony-fb","3001.1.0-dev-harmony-fb","4001.1.0-dev-harmony-fb","4001.1001.0-dev-harmony-fb","4001.3001.0-dev-harmony-fb","5001.1.0-dev-harmony-fb","6001.1.0-dev-harmony-fb","6001.1001.0-dev-harmony-fb","7001.1.0-dev-harmony-fb","8001.1.0-dev-harmony-fb","8001.1001.0-dev-harmony-fb","8001.2001.0-dev-harmony-fb","9001.1.0-dev-harmony-fb","10001.1.0-dev-harmony-fb","11001.1.0-dev-harmony-fb","12001.1.0-dev-harmony-fb","13001.1.0-dev-harmony-fb","13001.1001.0-dev-harmony-fb","14001.1.0-dev-harmony-fb","15001.1.0-dev-harmony-fb"]
+70 verbose stack
+70 verbose stack     at installTargetsError (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/add-named.js:274:12)
+70 verbose stack     at next (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/add-named.js:253:17)
+70 verbose stack     at setData (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/add-named.js:230:5)
+70 verbose stack     at RES (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+70 verbose stack     at f (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/once/once.js:17:25)
+70 verbose stack     at fixName (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+70 verbose stack     at saved (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+70 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+71 verbose cwd /Users/jamesblack/src/emptyclipgaming/game
+72 error Darwin 14.3.0
+73 error argv "/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/node" "/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/npm" "install" "--save-dev" "jscs" "esprima-fb"
+74 error node v0.12.7
+75 error npm  v2.11.3
+76 error code ETARGET
+77 error notarget No compatible version found: esprima-fb@'*'
+77 error notarget Valid install targets:
+77 error notarget ["1001.1001.1000-dev-harmony-fb","1001.1001.1001-dev-harmony-fb","1001.1001.2000-dev-harmony-fb","2001.1001.2000-dev-harmony-fb","2001.1001.0-dev-harmony-fb","3001.1.0-dev-harmony-fb","4001.1.0-dev-harmony-fb","4001.1001.0-dev-harmony-fb","4001.3001.0-dev-harmony-fb","5001.1.0-dev-harmony-fb","6001.1.0-dev-harmony-fb","6001.1001.0-dev-harmony-fb","7001.1.0-dev-harmony-fb","8001.1.0-dev-harmony-fb","8001.1001.0-dev-harmony-fb","8001.2001.0-dev-harmony-fb","9001.1.0-dev-harmony-fb","10001.1.0-dev-harmony-fb","11001.1.0-dev-harmony-fb","12001.1.0-dev-harmony-fb","13001.1.0-dev-harmony-fb","13001.1001.0-dev-harmony-fb","14001.1.0-dev-harmony-fb","15001.1.0-dev-harmony-fb"]
+77 error notarget
+77 error notarget This is most likely not a problem with npm itself.
+77 error notarget In most cases you or one of your dependencies are requesting
+77 error notarget a package version that doesn't exist.
+77 error notarget
+77 error notarget It was specified as a dependency of 'game'
+78 verbose exit [ 1, true ]
