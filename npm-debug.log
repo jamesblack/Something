@@ -2,9 +2,8 @@
 1 verbose cli [ '/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/node',
 1 verbose cli   '/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   '--save-dev',
-1 verbose cli   'jscs',
-1 verbose cli   'esprima-fb' ]
+1 verbose cli   '--save',
+1 verbose cli   'reflux' ]
 2 info using npm@2.11.3
 3 info using node@v0.12.7
 4 verbose install initial load of /Users/jamesblack/src/emptyclipgaming/game/package.json
@@ -25,205 +24,378 @@
 19 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/webpack/package.json
 20 verbose installManyTop reading scoped package data from /Users/jamesblack/src/emptyclipgaming/game/node_modules/webpack-dev-server/package.json
 21 verbose readDependencies loading dependencies from /Users/jamesblack/src/emptyclipgaming/game/package.json
-22 silly cache add args [ 'jscs', null ]
-23 verbose cache add spec jscs
-24 silly cache add args [ 'esprima-fb', null ]
-25 verbose cache add spec esprima-fb
-26 silly cache add parsed spec { raw: 'jscs',
-26 silly cache add   scope: null,
-26 silly cache add   name: 'jscs',
-26 silly cache add   rawSpec: '',
-26 silly cache add   spec: '*',
-26 silly cache add   type: 'range' }
-27 silly addNamed jscs@*
-28 verbose addNamed "*" is a valid semver range for jscs
-29 silly addNameRange { name: 'jscs', range: '*', hasData: false }
-30 silly mapToRegistry name jscs
-31 silly mapToRegistry using default registry
-32 silly mapToRegistry registry https://registry.npmjs.org/
-33 silly mapToRegistry uri https://registry.npmjs.org/jscs
-34 verbose addNameRange registry:https://registry.npmjs.org/jscs not in flight; fetching
-35 silly cache add parsed spec { raw: 'esprima-fb',
-35 silly cache add   scope: null,
-35 silly cache add   name: 'esprima-fb',
-35 silly cache add   rawSpec: '',
-35 silly cache add   spec: '*',
-35 silly cache add   type: 'range' }
-36 silly addNamed esprima-fb@*
-37 verbose addNamed "*" is a valid semver range for esprima-fb
-38 silly addNameRange { name: 'esprima-fb', range: '*', hasData: false }
-39 silly mapToRegistry name esprima-fb
-40 silly mapToRegistry using default registry
-41 silly mapToRegistry registry https://registry.npmjs.org/
-42 silly mapToRegistry uri https://registry.npmjs.org/esprima-fb
-43 verbose addNameRange registry:https://registry.npmjs.org/esprima-fb not in flight; fetching
-44 verbose request uri https://registry.npmjs.org/jscs
-45 verbose request no auth needed
-46 info attempt registry request try #1 at 1:04:13 PM
-47 verbose request id cb69ea1b30695d26
-48 http request GET https://registry.npmjs.org/jscs
-49 verbose request uri https://registry.npmjs.org/esprima-fb
-50 verbose request no auth needed
-51 info attempt registry request try #1 at 1:04:13 PM
-52 verbose etag "85UWFJYL0GWZ7RFK40KJ9SJSN"
-53 http request GET https://registry.npmjs.org/esprima-fb
-54 http 304 https://registry.npmjs.org/esprima-fb
-55 silly get cb [ 304,
-55 silly get   { date: 'Tue, 21 Jul 2015 19:04:06 GMT',
-55 silly get     via: '1.1 varnish',
-55 silly get     'cache-control': 'max-age=60',
-55 silly get     etag: '"85UWFJYL0GWZ7RFK40KJ9SJSN"',
-55 silly get     age: '32',
-55 silly get     connection: 'keep-alive',
-55 silly get     'x-served-by': 'cache-lax1424-LAX',
-55 silly get     'x-cache': 'HIT',
-55 silly get     'x-cache-hits': '2',
-55 silly get     'x-timer': 'S1437505446.846584,VS0,VE0',
-55 silly get     vary: 'Accept' } ]
-56 verbose etag https://registry.npmjs.org/esprima-fb from cache
-57 verbose get saving esprima-fb to /Users/jamesblack/.npm/registry.npmjs.org/esprima-fb/.cache.json
-58 silly addNameRange number 2 { name: 'esprima-fb', range: '*', hasData: true }
-59 silly addNameRange versions [ 'esprima-fb',
-59 silly addNameRange   [ '1001.1001.1000-dev-harmony-fb',
-59 silly addNameRange     '1001.1001.1001-dev-harmony-fb',
-59 silly addNameRange     '1001.1001.2000-dev-harmony-fb',
-59 silly addNameRange     '2001.1001.2000-dev-harmony-fb',
-59 silly addNameRange     '2001.1001.0-dev-harmony-fb',
-59 silly addNameRange     '3001.1.0-dev-harmony-fb',
-59 silly addNameRange     '4001.1.0-dev-harmony-fb',
-59 silly addNameRange     '4001.1001.0-dev-harmony-fb',
-59 silly addNameRange     '4001.3001.0-dev-harmony-fb',
-59 silly addNameRange     '5001.1.0-dev-harmony-fb',
-59 silly addNameRange     '6001.1.0-dev-harmony-fb',
-59 silly addNameRange     '6001.1001.0-dev-harmony-fb',
-59 silly addNameRange     '7001.1.0-dev-harmony-fb',
-59 silly addNameRange     '8001.1.0-dev-harmony-fb',
-59 silly addNameRange     '8001.1001.0-dev-harmony-fb',
-59 silly addNameRange     '8001.2001.0-dev-harmony-fb',
-59 silly addNameRange     '9001.1.0-dev-harmony-fb',
-59 silly addNameRange     '10001.1.0-dev-harmony-fb',
-59 silly addNameRange     '11001.1.0-dev-harmony-fb',
-59 silly addNameRange     '12001.1.0-dev-harmony-fb',
-59 silly addNameRange     '13001.1.0-dev-harmony-fb',
-59 silly addNameRange     '13001.1001.0-dev-harmony-fb',
-59 silly addNameRange     '14001.1.0-dev-harmony-fb',
-59 silly addNameRange     '15001.1.0-dev-harmony-fb' ] ]
-60 http 200 https://registry.npmjs.org/jscs
-61 silly get cb [ 200,
-61 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-61 silly get     etag: '"4HANWW0K4AROSTKFY2UN59X0S"',
-61 silly get     'content-type': 'application/json',
-61 silly get     'cache-control': 'max-age=60',
-61 silly get     'content-length': '120177',
-61 silly get     'accept-ranges': 'bytes',
-61 silly get     date: 'Tue, 21 Jul 2015 19:04:06 GMT',
-61 silly get     via: '1.1 varnish',
-61 silly get     age: '0',
-61 silly get     connection: 'keep-alive',
-61 silly get     'x-served-by': 'cache-lax1434-LAX',
-61 silly get     'x-cache': 'HIT',
-61 silly get     'x-cache-hits': '1',
-61 silly get     'x-timer': 'S1437505446.847996,VS0,VE47',
-61 silly get     vary: 'Accept' } ]
-62 verbose get saving jscs to /Users/jamesblack/.npm/registry.npmjs.org/jscs/.cache.json
-63 silly addNameRange number 2 { name: 'jscs', range: '*', hasData: true }
-64 silly addNameRange versions [ 'jscs',
-64 silly addNameRange   [ '0.0.1',
-64 silly addNameRange     '0.0.2',
-64 silly addNameRange     '0.0.3',
-64 silly addNameRange     '0.0.4',
-64 silly addNameRange     '0.0.5',
-64 silly addNameRange     '0.0.6',
-64 silly addNameRange     '0.0.7',
-64 silly addNameRange     '0.0.8',
-64 silly addNameRange     '0.0.9',
-64 silly addNameRange     '0.0.10',
-64 silly addNameRange     '0.0.11',
-64 silly addNameRange     '0.0.12',
-64 silly addNameRange     '1.0.0',
-64 silly addNameRange     '1.0.1',
-64 silly addNameRange     '1.0.2',
-64 silly addNameRange     '1.0.3',
-64 silly addNameRange     '1.0.4',
-64 silly addNameRange     '1.0.5',
-64 silly addNameRange     '1.0.6',
-64 silly addNameRange     '1.0.7',
-64 silly addNameRange     '1.0.8',
-64 silly addNameRange     '1.0.10',
-64 silly addNameRange     '1.0.11',
-64 silly addNameRange     '1.0.12',
-64 silly addNameRange     '1.0.13',
-64 silly addNameRange     '1.0.14',
-64 silly addNameRange     '1.0.15',
-64 silly addNameRange     '1.1.0',
-64 silly addNameRange     '1.2.0',
-64 silly addNameRange     '1.2.1',
-64 silly addNameRange     '1.2.2',
-64 silly addNameRange     '1.2.3',
-64 silly addNameRange     '1.2.4',
-64 silly addNameRange     '1.3.0',
-64 silly addNameRange     '1.4.0',
-64 silly addNameRange     '1.4.1',
-64 silly addNameRange     '1.4.2',
-64 silly addNameRange     '1.4.3',
-64 silly addNameRange     '1.4.4',
-64 silly addNameRange     '1.4.5',
-64 silly addNameRange     '1.5.1',
-64 silly addNameRange     '1.5.2',
-64 silly addNameRange     '1.5.3',
-64 silly addNameRange     '1.5.4',
-64 silly addNameRange     '1.5.6',
-64 silly addNameRange     '1.5.7',
-64 silly addNameRange     '1.5.8',
-64 silly addNameRange     '1.5.9',
-64 silly addNameRange     '1.6.0',
-64 silly addNameRange     '1.6.1',
-64 silly addNameRange     '1.6.2',
-64 silly addNameRange     '1.7.0',
-64 silly addNameRange     '1.7.1',
-64 silly addNameRange     '1.7.2',
-64 silly addNameRange     '1.7.3',
-64 silly addNameRange     '1.8.0',
-64 silly addNameRange     '1.8.1',
-64 silly addNameRange     '1.9.0',
-64 silly addNameRange     '1.10.0',
-64 silly addNameRange     '1.11.0',
-64 silly addNameRange     '1.11.1',
-64 silly addNameRange     '1.11.2',
-64 silly addNameRange     '1.11.3',
-64 silly addNameRange     '1.12.0',
-64 silly addNameRange     '1.13.0',
-64 silly addNameRange     '1.13.1' ] ]
-65 silly addNamed jscs@1.13.1
-66 verbose addNamed "1.13.1" is a plain semver version for jscs
-67 silly cache afterAdd jscs@1.13.1
-68 verbose afterAdd /Users/jamesblack/.npm/jscs/1.13.1/package/package.json not in flight; writing
-69 verbose afterAdd /Users/jamesblack/.npm/jscs/1.13.1/package/package.json written
-70 verbose stack Error: No compatible version found: esprima-fb@'*'
-70 verbose stack Valid install targets:
-70 verbose stack ["1001.1001.1000-dev-harmony-fb","1001.1001.1001-dev-harmony-fb","1001.1001.2000-dev-harmony-fb","2001.1001.2000-dev-harmony-fb","2001.1001.0-dev-harmony-fb","3001.1.0-dev-harmony-fb","4001.1.0-dev-harmony-fb","4001.1001.0-dev-harmony-fb","4001.3001.0-dev-harmony-fb","5001.1.0-dev-harmony-fb","6001.1.0-dev-harmony-fb","6001.1001.0-dev-harmony-fb","7001.1.0-dev-harmony-fb","8001.1.0-dev-harmony-fb","8001.1001.0-dev-harmony-fb","8001.2001.0-dev-harmony-fb","9001.1.0-dev-harmony-fb","10001.1.0-dev-harmony-fb","11001.1.0-dev-harmony-fb","12001.1.0-dev-harmony-fb","13001.1.0-dev-harmony-fb","13001.1001.0-dev-harmony-fb","14001.1.0-dev-harmony-fb","15001.1.0-dev-harmony-fb"]
-70 verbose stack
-70 verbose stack     at installTargetsError (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/add-named.js:274:12)
-70 verbose stack     at next (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/add-named.js:253:17)
-70 verbose stack     at setData (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/add-named.js:230:5)
-70 verbose stack     at RES (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
-70 verbose stack     at f (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/once/once.js:17:25)
-70 verbose stack     at fixName (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/add-named.js:29:5)
-70 verbose stack     at saved (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
-70 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
-71 verbose cwd /Users/jamesblack/src/emptyclipgaming/game
-72 error Darwin 14.3.0
-73 error argv "/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/node" "/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/npm" "install" "--save-dev" "jscs" "esprima-fb"
-74 error node v0.12.7
-75 error npm  v2.11.3
-76 error code ETARGET
-77 error notarget No compatible version found: esprima-fb@'*'
-77 error notarget Valid install targets:
-77 error notarget ["1001.1001.1000-dev-harmony-fb","1001.1001.1001-dev-harmony-fb","1001.1001.2000-dev-harmony-fb","2001.1001.2000-dev-harmony-fb","2001.1001.0-dev-harmony-fb","3001.1.0-dev-harmony-fb","4001.1.0-dev-harmony-fb","4001.1001.0-dev-harmony-fb","4001.3001.0-dev-harmony-fb","5001.1.0-dev-harmony-fb","6001.1.0-dev-harmony-fb","6001.1001.0-dev-harmony-fb","7001.1.0-dev-harmony-fb","8001.1.0-dev-harmony-fb","8001.1001.0-dev-harmony-fb","8001.2001.0-dev-harmony-fb","9001.1.0-dev-harmony-fb","10001.1.0-dev-harmony-fb","11001.1.0-dev-harmony-fb","12001.1.0-dev-harmony-fb","13001.1.0-dev-harmony-fb","13001.1001.0-dev-harmony-fb","14001.1.0-dev-harmony-fb","15001.1.0-dev-harmony-fb"]
-77 error notarget
-77 error notarget This is most likely not a problem with npm itself.
-77 error notarget In most cases you or one of your dependencies are requesting
-77 error notarget a package version that doesn't exist.
-77 error notarget
-77 error notarget It was specified as a dependency of 'game'
-78 verbose exit [ 1, true ]
+22 silly cache add args [ 'reflux', null ]
+23 verbose cache add spec reflux
+24 silly cache add parsed spec { raw: 'reflux',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'reflux',
+24 silly cache add   rawSpec: '',
+24 silly cache add   spec: '*',
+24 silly cache add   type: 'range' }
+25 silly addNamed reflux@*
+26 verbose addNamed "*" is a valid semver range for reflux
+27 silly addNameRange { name: 'reflux', range: '*', hasData: false }
+28 silly mapToRegistry name reflux
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual
+31 silly mapToRegistry uri https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux
+32 verbose addNameRange registry:https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux not in flight; fetching
+33 verbose request uri https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux
+34 verbose request always-auth set; sending authorization
+35 info attempt registry request try #1 at 9:12:51 AM
+36 verbose request id 858775a4fa870fb1
+37 http request GET https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux
+38 http 200 https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux
+39 silly get cb [ 200,
+39 silly get   { 'content-type': 'application/json',
+39 silly get     date: 'Sat, 25 Jul 2015 15:12:51 GMT',
+39 silly get     etag: '0623b18673901f9418ed6a6fc2d4de0011ddd4a5',
+39 silly get     server: 'nginx',
+39 silly get     'x-artifactory-id': 'aolprod4-use-1d-vivintsolar',
+39 silly get     'x-node': 'nginx1d.prod-use1',
+39 silly get     'transfer-encoding': 'chunked',
+39 silly get     connection: 'keep-alive' } ]
+40 verbose get saving reflux to /Users/jamesblack/.npm/vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux/.cache.json
+41 silly addNameRange number 2 { name: 'reflux', range: '*', hasData: true }
+42 silly addNameRange versions [ 'reflux',
+42 silly addNameRange   [ '0.1.5',
+42 silly addNameRange     '0.2.4',
+42 silly addNameRange     '0.1.6',
+42 silly addNameRange     '0.2.5',
+42 silly addNameRange     '0.0.4',
+42 silly addNameRange     '0.1.3',
+42 silly addNameRange     '0.2.2',
+42 silly addNameRange     '0.1.4',
+42 silly addNameRange     '0.2.3',
+42 silly addNameRange     '0.1.9',
+42 silly addNameRange     '0.2.8',
+42 silly addNameRange     '0.2.9',
+42 silly addNameRange     '0.1.7',
+42 silly addNameRange     '0.2.6',
+42 silly addNameRange     '0.1.8',
+42 silly addNameRange     '0.2.7',
+42 silly addNameRange     '0.0.2',
+42 silly addNameRange     '0.1.1',
+42 silly addNameRange     '0.2.0',
+42 silly addNameRange     '0.0.3',
+42 silly addNameRange     '0.1.2',
+42 silly addNameRange     '0.2.1',
+42 silly addNameRange     '0.0.1',
+42 silly addNameRange     '0.1.0',
+42 silly addNameRange     '0.2.10',
+42 silly addNameRange     '0.2.11',
+42 silly addNameRange     '0.1.15',
+42 silly addNameRange     '0.1.14',
+42 silly addNameRange     '0.1.13',
+42 silly addNameRange     '0.1.12',
+42 silly addNameRange     '0.1.11',
+42 silly addNameRange     '0.1.10' ] ]
+43 silly addNamed reflux@0.2.11
+44 verbose addNamed "0.2.11" is a plain semver version for reflux
+45 silly mapToRegistry name reflux
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual
+48 silly mapToRegistry uri https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux
+49 verbose addRemoteTarball https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux/-/reflux-0.2.11.tgz not in flight; adding
+50 verbose addRemoteTarball [ 'https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux/-/reflux-0.2.11.tgz',
+50 verbose addRemoteTarball   'c24e3be909ece1b2793e6a430cdf50c0a1bc0d78' ]
+51 info retry fetch attempt 1 at 9:12:53 AM
+52 info attempt registry request try #1 at 9:12:53 AM
+53 http fetch GET https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux/-/reflux-0.2.11.tgz
+54 http fetch 200 https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux/-/reflux-0.2.11.tgz
+55 silly fetchAndShaCheck shasum c24e3be909ece1b2793e6a430cdf50c0a1bc0d78
+56 verbose addTmpTarball /var/folders/84/dpx9q1g12ss_m3wvqy2m59th0000gn/T/npm-172-e45c0cea/vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux/-/reflux-0.2.11.tgz not in flight; adding
+57 verbose addTmpTarball already have metadata; skipping unpack for reflux@0.2.11
+58 silly cache afterAdd reflux@0.2.11
+59 verbose afterAdd /Users/jamesblack/.npm/reflux/0.2.11/package/package.json not in flight; writing
+60 verbose afterAdd /Users/jamesblack/.npm/reflux/0.2.11/package/package.json written
+61 silly install resolved [ { name: 'reflux',
+61 silly install resolved     description: 'A simple library for uni-directional dataflow application architecture inspired by ReactJS Flux',
+61 silly install resolved     version: '0.2.11',
+61 silly install resolved     author: { name: 'Mikael Brassman' },
+61 silly install resolved     homepage: 'https://github.com/spoike/reflux#readme',
+61 silly install resolved     repository:
+61 silly install resolved      { type: 'git',
+61 silly install resolved        url: 'git+ssh://git@github.com/spoike/reflux.git' },
+61 silly install resolved     bugs: { url: 'https://github.com/spoike/reflux/issues' },
+61 silly install resolved     main: 'index.js',
+61 silly install resolved     dist:
+61 silly install resolved      { tarball: 'http://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux/-/reflux-0.2.11.tgz',
+61 silly install resolved        shasum: 'c24e3be909ece1b2793e6a430cdf50c0a1bc0d78' },
+61 silly install resolved     dependencies: { eventemitter3: '^1.1.1' },
+61 silly install resolved     devDependencies:
+61 silly install resolved      { benchmark: '^1.0.0',
+61 silly install resolved        browserify: '~10.2.3',
+61 silly install resolved        chai: '~3.0.0',
+61 silly install resolved        'chai-as-promised': '^5.0.0',
+61 silly install resolved        'es6-promise': '^2.3.0',
+61 silly install resolved        grunt: '^0.4.5',
+61 silly install resolved        'grunt-browserify': '3.8.0',
+61 silly install resolved        'grunt-contrib-jshint': '^0.11.2',
+61 silly install resolved        'grunt-contrib-uglify': '^0.5.0',
+61 silly install resolved        'grunt-contrib-watch': '^0.6.1',
+61 silly install resolved        'grunt-karma': '~0.11.0',
+61 silly install resolved        'grunt-mocha-test': '~0.12.7',
+61 silly install resolved        karma: '~0.12.36',
+61 silly install resolved        'karma-browserify': '^4.2.1',
+61 silly install resolved        'karma-commonjs': '0.0.13',
+61 silly install resolved        'karma-mocha': '^0.1.9',
+61 silly install resolved        'karma-phantomjs-launcher': '~0.2.0',
+61 silly install resolved        'karma-sauce-launcher': '^0.2.10',
+61 silly install resolved        'karma-spec-reporter': '^0.0.19',
+61 silly install resolved        matchdep: '^0.3.0',
+61 silly install resolved        mocha: '~2.2.5',
+61 silly install resolved        q: '^1.0.1',
+61 silly install resolved        sinon: '^1.10.3' },
+61 silly install resolved     peerDependencies: { react: '>=0.12.2 <0.14.0' },
+61 silly install resolved     keywords: [ 'react', 'flux' ],
+61 silly install resolved     license: 'BSD-3-Clause',
+61 silly install resolved     maintainers: [ [Object] ],
+61 silly install resolved     directories: {},
+61 silly install resolved     scripts:
+61 silly install resolved      { test: 'grunt test',
+61 silly install resolved        benchmark: 'node test/benchmarks',
+61 silly install resolved        build: 'grunt build' },
+61 silly install resolved     _from: 'reflux@*',
+61 silly install resolved     _npmVersion: '2.11.1',
+61 silly install resolved     _npmUser: { name: 'spoike', email: 'mishakun+npm@gmail.com' },
+61 silly install resolved     _id: 'reflux@0.2.11',
+61 silly install resolved     gitHead: '3accf3ff46ef9273b8c542b9e953f70927d2544b',
+61 silly install resolved     _shasum: 'c24e3be909ece1b2793e6a430cdf50c0a1bc0d78',
+61 silly install resolved     _nodeVersion: '0.10.12',
+61 silly install resolved     _resolved: 'https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/reflux/-/reflux-0.2.11.tgz' } ]
+62 info install reflux@0.2.11 into /Users/jamesblack/src/emptyclipgaming/game
+63 info installOne reflux@0.2.11
+64 verbose installOne of reflux to /Users/jamesblack/src/emptyclipgaming/game not in flight; installing
+65 verbose lock using /Users/jamesblack/.npm/_locks/reflux-19dd362432d118ac.lock for /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux
+66 silly install write writing reflux 0.2.11 to /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux
+67 verbose unbuild node_modules/reflux
+68 silly gentlyRm /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux is being purged from base /Users/jamesblack/src/emptyclipgaming/game
+69 verbose gentlyRm don't care about contents; nuking /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux
+70 verbose tar unpack /Users/jamesblack/.npm/reflux/0.2.11/package.tgz
+71 verbose tar unpacking to /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux
+72 silly gentlyRm /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux is being purged
+73 verbose gentlyRm don't care about contents; nuking /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux
+74 silly gunzTarPerm modes [ '755', '644' ]
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm extractEntry .npmignore
+77 silly gunzTarPerm extractEntry README.md
+78 silly gunzTarPerm extractEntry Gruntfile.js
+79 silly gunzTarPerm extractEntry index.js
+80 silly gunzTarPerm extractEntry karma.conf.js
+81 silly gunzTarPerm extractEntry CHANGELOG.md
+82 silly gunzTarPerm extractEntry LICENSE.md
+83 silly gunzTarPerm extractEntry .editorconfig
+84 silly gunzTarPerm extractEntry bower.json
+85 silly gunzTarPerm extractEntry dist/reflux.js
+86 silly gunzTarPerm extractEntry dist/reflux.min.js
+87 silly gunzTarPerm extractEntry .jshintrc
+88 silly gunzTarPerm extractEntry .travis.yml
+89 silly gunzTarPerm extractEntry src/ActionMethods.js
+90 silly gunzTarPerm extractEntry src/StoreMethods.js
+91 silly gunzTarPerm extractEntry src/bindMethods.js
+92 silly gunzTarPerm extractEntry src/connect.js
+93 silly gunzTarPerm extractEntry src/PublisherMethods.js
+94 silly gunzTarPerm extractEntry src/createAction.js
+95 silly gunzTarPerm extractEntry src/createStore.js
+96 silly gunzTarPerm extractEntry src/index.js
+97 silly gunzTarPerm extractEntry src/joins.js
+98 silly gunzTarPerm extractEntry src/listenTo.js
+99 silly gunzTarPerm extractEntry src/ListenerMixin.js
+100 silly gunzTarPerm extractEntry src/listenToMany.js
+101 silly gunzTarPerm extractEntry src/ListenerMethods.js
+102 silly gunzTarPerm extractEntry src/mixer.js
+103 silly gunzTarPerm extractEntry src/Keep.js
+104 silly gunzTarPerm extractEntry src/utils.js
+105 silly gunzTarPerm extractEntry src/connectFilter.js
+106 verbose write writing to /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/package.json
+107 info preinstall reflux@0.2.11
+108 verbose readDependencies loading dependencies from /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/package.json
+109 silly prepareForInstallMany adding eventemitter3@^1.1.1 from reflux dependencies
+110 verbose readDependencies loading dependencies from /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/package.json
+111 silly cache add args [ 'eventemitter3@^1.1.1', null ]
+112 verbose cache add spec eventemitter3@^1.1.1
+113 silly cache add parsed spec { raw: 'eventemitter3@^1.1.1',
+113 silly cache add   scope: null,
+113 silly cache add   name: 'eventemitter3',
+113 silly cache add   rawSpec: '^1.1.1',
+113 silly cache add   spec: '>=1.1.1 <2.0.0',
+113 silly cache add   type: 'range' }
+114 silly addNamed eventemitter3@>=1.1.1 <2.0.0
+115 verbose addNamed ">=1.1.1 <2.0.0" is a valid semver range for eventemitter3
+116 silly addNameRange { name: 'eventemitter3',
+116 silly addNameRange   range: '>=1.1.1 <2.0.0',
+116 silly addNameRange   hasData: false }
+117 silly mapToRegistry name eventemitter3
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual
+120 silly mapToRegistry uri https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3
+121 verbose addNameRange registry:https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3 not in flight; fetching
+122 verbose request uri https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3
+123 verbose request always-auth set; sending authorization
+124 info attempt registry request try #1 at 9:12:53 AM
+125 http request GET https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3
+126 http 200 https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3
+127 silly get cb [ 200,
+127 silly get   { 'content-type': 'application/json',
+127 silly get     date: 'Sat, 25 Jul 2015 15:12:52 GMT',
+127 silly get     etag: 'dd25a1b2f5ef024d7a9df983db5cc821aff841fb',
+127 silly get     server: 'nginx',
+127 silly get     'x-artifactory-id': 'aolprod4-use-1d-vivintsolar',
+127 silly get     'x-node': 'nginx1d.prod-use1',
+127 silly get     'transfer-encoding': 'chunked',
+127 silly get     connection: 'keep-alive' } ]
+128 verbose get saving eventemitter3 to /Users/jamesblack/.npm/vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3/.cache.json
+129 silly addNameRange number 2 { name: 'eventemitter3', range: '>=1.1.1 <2.0.0', hasData: true }
+130 silly addNameRange versions [ 'eventemitter3',
+130 silly addNameRange   [ '0.1.5',
+130 silly addNameRange     '0.1.6',
+130 silly addNameRange     '0.1.3',
+130 silly addNameRange     '0.1.4',
+130 silly addNameRange     '0.1.1',
+130 silly addNameRange     '0.1.2',
+130 silly addNameRange     '0.0.0',
+130 silly addNameRange     '0.0.1',
+130 silly addNameRange     '0.1.0',
+130 silly addNameRange     '1.0.3',
+130 silly addNameRange     '1.0.0',
+130 silly addNameRange     '1.0.1',
+130 silly addNameRange     '1.1.0',
+130 silly addNameRange     '1.0.2',
+130 silly addNameRange     '1.1.1' ] ]
+131 silly addNamed eventemitter3@1.1.1
+132 verbose addNamed "1.1.1" is a plain semver version for eventemitter3
+133 silly mapToRegistry name eventemitter3
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual
+136 silly mapToRegistry uri https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3
+137 verbose addRemoteTarball https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3/-/eventemitter3-1.1.1.tgz not in flight; adding
+138 verbose addRemoteTarball [ 'https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3/-/eventemitter3-1.1.1.tgz',
+138 verbose addRemoteTarball   '47786bdaa087caf7b1b75e73abc5c7d540158cd0' ]
+139 info retry fetch attempt 1 at 9:12:54 AM
+140 info attempt registry request try #1 at 9:12:54 AM
+141 http fetch GET https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3/-/eventemitter3-1.1.1.tgz
+142 http fetch 200 https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3/-/eventemitter3-1.1.1.tgz
+143 silly fetchAndShaCheck shasum 47786bdaa087caf7b1b75e73abc5c7d540158cd0
+144 verbose addTmpTarball /var/folders/84/dpx9q1g12ss_m3wvqy2m59th0000gn/T/npm-172-e45c0cea/vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3/-/eventemitter3-1.1.1.tgz not in flight; adding
+145 verbose addTmpTarball already have metadata; skipping unpack for eventemitter3@1.1.1
+146 silly cache afterAdd eventemitter3@1.1.1
+147 verbose afterAdd /Users/jamesblack/.npm/eventemitter3/1.1.1/package/package.json not in flight; writing
+148 verbose afterAdd /Users/jamesblack/.npm/eventemitter3/1.1.1/package/package.json written
+149 silly install resolved [ { name: 'eventemitter3',
+149 silly install resolved     description: 'EventEmitter3 focuses on performance while maintaining a Node.js AND browser compatible interface.',
+149 silly install resolved     version: '1.1.1',
+149 silly install resolved     author: { name: 'Arnout Kazemier' },
+149 silly install resolved     homepage: 'https://github.com/primus/eventemitter3#readme',
+149 silly install resolved     repository:
+149 silly install resolved      { type: 'git',
+149 silly install resolved        url: 'git://github.com/primus/eventemitter3.git' },
+149 silly install resolved     bugs: { url: 'https://github.com/primus/eventemitter3/issues' },
+149 silly install resolved     main: 'index.js',
+149 silly install resolved     dist:
+149 silly install resolved      { tarball: 'http://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3/-/eventemitter3-1.1.1.tgz',
+149 silly install resolved        shasum: '47786bdaa087caf7b1b75e73abc5c7d540158cd0' },
+149 silly install resolved     devDependencies:
+149 silly install resolved      { assume: '1.2.x',
+149 silly install resolved        istanbul: '0.3.x',
+149 silly install resolved        mocha: '2.2.x',
+149 silly install resolved        'pre-commit': '1.0.x',
+149 silly install resolved        zuul: '3.0.x' },
+149 silly install resolved     keywords:
+149 silly install resolved      [ 'EventEmitter',
+149 silly install resolved        'EventEmitter2',
+149 silly install resolved        'EventEmitter3',
+149 silly install resolved        'Events',
+149 silly install resolved        'addEventListener',
+149 silly install resolved        'addListener',
+149 silly install resolved        'emit',
+149 silly install resolved        'emits',
+149 silly install resolved        'emitter',
+149 silly install resolved        'event',
+149 silly install resolved        'once',
+149 silly install resolved        'pub/sub',
+149 silly install resolved        'publish',
+149 silly install resolved        'reactor',
+149 silly install resolved        'subscribe' ],
+149 silly install resolved     license: 'MIT',
+149 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+149 silly install resolved     directories: {},
+149 silly install resolved     scripts:
+149 silly install resolved      { 'test-browser': 'zuul --browser-name ${BROWSER_NAME} --browser-version ${BROWSER_VERSION} -- test.js',
+149 silly install resolved        'test-node': 'istanbul cover node_modules/.bin/_mocha --report lcovonly -- test.js',
+149 silly install resolved        coverage: 'istanbul cover ./node_modules/.bin/_mocha -- test.js',
+149 silly install resolved        sync: 'node versions.js',
+149 silly install resolved        test: 'mocha test.js' },
+149 silly install resolved     _from: 'eventemitter3@>=1.1.1 <2.0.0',
+149 silly install resolved     _npmVersion: '2.9.1',
+149 silly install resolved     _npmUser: { name: '3rdeden', email: 'npm@3rd-Eden.com' },
+149 silly install resolved     _id: 'eventemitter3@1.1.1',
+149 silly install resolved     gitHead: '91f571f40c918d71220747791c05ec33f3402a56',
+149 silly install resolved     'pre-commit': 'sync, test',
+149 silly install resolved     _shasum: '47786bdaa087caf7b1b75e73abc5c7d540158cd0',
+149 silly install resolved     _nodeVersion: '0.12.3',
+149 silly install resolved     _resolved: 'https://vivintsolar.artifactoryonline.com/vivintsolar/api/npm/npm-virtual/eventemitter3/-/eventemitter3-1.1.1.tgz' } ]
+150 info install eventemitter3@1.1.1 into /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux
+151 info installOne eventemitter3@1.1.1
+152 verbose installOne of eventemitter3 to /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux not in flight; installing
+153 verbose lock using /Users/jamesblack/.npm/_locks/eventemitter3-14efd2bfc3d7d8c0.lock for /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3
+154 silly install write writing eventemitter3 1.1.1 to /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3
+155 verbose unbuild node_modules/reflux/node_modules/eventemitter3
+156 silly gentlyRm /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3 is being purged from base /Users/jamesblack/src/emptyclipgaming/game
+157 verbose gentlyRm don't care about contents; nuking /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3
+158 verbose tar unpack /Users/jamesblack/.npm/eventemitter3/1.1.1/package.tgz
+159 verbose tar unpacking to /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3
+160 silly gentlyRm /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3 is being purged
+161 verbose gentlyRm don't care about contents; nuking /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3
+162 silly gunzTarPerm modes [ '755', '644' ]
+163 silly gunzTarPerm extractEntry package.json
+164 silly gunzTarPerm extractEntry README.md
+165 silly gunzTarPerm extractEntry LICENSE
+166 silly gunzTarPerm extractEntry index.js
+167 verbose write writing to /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3/package.json
+168 info preinstall eventemitter3@1.1.1
+169 verbose readDependencies loading dependencies from /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3/package.json
+170 verbose readDependencies loading dependencies from /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3/package.json
+171 silly install resolved []
+172 verbose about to build /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3
+173 info build /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3
+174 info linkStuff eventemitter3@1.1.1
+175 silly linkStuff eventemitter3@1.1.1 has /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules as its parent node_modules
+176 verbose linkBins eventemitter3@1.1.1
+177 verbose linkMans eventemitter3@1.1.1
+178 verbose rebuildBundles eventemitter3@1.1.1
+179 info install eventemitter3@1.1.1
+180 info postinstall eventemitter3@1.1.1
+181 verbose unlock done using /Users/jamesblack/.npm/_locks/eventemitter3-14efd2bfc3d7d8c0.lock for /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux/node_modules/eventemitter3
+182 verbose about to build /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux
+183 info build /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux
+184 info linkStuff reflux@0.2.11
+185 silly linkStuff reflux@0.2.11 has /Users/jamesblack/src/emptyclipgaming/game/node_modules as its parent node_modules
+186 verbose linkBins reflux@0.2.11
+187 verbose linkMans reflux@0.2.11
+188 verbose rebuildBundles reflux@0.2.11
+189 verbose rebuildBundles [ 'eventemitter3' ]
+190 info install reflux@0.2.11
+191 info postinstall reflux@0.2.11
+192 verbose unlock done using /Users/jamesblack/.npm/_locks/reflux-19dd362432d118ac.lock for /Users/jamesblack/src/emptyclipgaming/game/node_modules/reflux
+193 verbose validateInstall loading /Users/jamesblack/src/emptyclipgaming/game/package.json for validation
+194 verbose stack Error: The package eslint does not satisfy its siblings' peerDependencies requirements!
+194 verbose stack     at /Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/install.js:125:32
+194 verbose stack     at /Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/lib/install.js:267:7
+194 verbose stack     at /Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+194 verbose stack     at /Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+194 verbose stack     at cb (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+194 verbose stack     at /Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+194 verbose stack     at cb (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+194 verbose stack     at /Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+194 verbose stack     at cb (/Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+194 verbose stack     at /Users/jamesblack/.nvm/versions/node/v0.12.7/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+195 verbose cwd /Users/jamesblack/src/emptyclipgaming/game
+196 error Darwin 14.3.0
+197 error argv "/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/node" "/Users/jamesblack/.nvm/versions/node/v0.12.7/bin/npm" "install" "--save" "reflux"
+198 error node v0.12.7
+199 error npm  v2.11.3
+200 error code EPEERINVALID
+201 error peerinvalid The package eslint does not satisfy its siblings' peerDependencies requirements!
+201 error peerinvalid Peer eslint-plugin-react@3.0.0 wants eslint@>=0.8.0 || ~1.0.0-rc-0
+202 verbose exit [ 1, true ]
