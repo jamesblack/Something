@@ -1,6 +1,8 @@
+require('babel/register');
 var express = require('express');
 var path = require('path');
 var httpProxy = require('http-proxy');
+var bodyParser = require('body-parser');
 
 var proxy = httpProxy.createProxyServer();
 var app = express();
@@ -10,6 +12,12 @@ var port = process.env.PORT;
 var publicPath = path.resolve(__dirname, 'public');
 
 app.use(express.static(publicPath));
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json());
+
+require('./api')(app);
 
 if (!isProduction) {
   var bundle = require('./bundle.js');

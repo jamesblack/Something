@@ -8,9 +8,23 @@ const SessionStore = Reflux.createStore({
     this.listenToMany(SessionActions);
   },
 
-  onLoginSuccess(message) {
-    console.log('what', message);
-    this.state.loggedIn = true;
+  onLogin() {
+    this.state.pending = true;
+    this.state.error = null;
+    this.state.session = null;
+    this.trigger(this.state);
+  },
+
+  onLoginFail() {
+    this.state.pending = false;
+    this.state.error = true;
+    this.trigger(this.state);
+  },
+
+  onLoginSuccess(data) {
+    this.state.pending = false;
+    this.state.error = null;
+    this.state.session = data;
     this.trigger(this.state);
   },
 
