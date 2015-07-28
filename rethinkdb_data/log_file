@@ -1,0 +1,20 @@
+2015-07-25T19:29:05.887723000 0.531937s notice: Recursively removing directory /Users/jamesblack/src/emptyclipgaming/game/rethinkdb_data/tmp
+2015-07-25T19:29:05.889482000 0.533700s notice: Initializing directory /Users/jamesblack/src/emptyclipgaming/game/rethinkdb_data
+2015-07-25T19:29:05.889566000 0.533779s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/jamesblack/src/emptyclipgaming/game/rethinkdb_data' did not already exist or is empty.)
+2015-07-25T19:29:05.889588000 0.533800s notice: Running rethinkdb 2.0.4 (CLANG 4.2 (clang-425.0.28))...
+2015-07-25T19:29:05.894487000 0.538701s notice: Running on Darwin 14.3.0 x86_64
+2015-07-25T19:29:05.894538000 0.538750s notice: Loading data from directory /Users/jamesblack/src/emptyclipgaming/game/rethinkdb_data
+2015-07-25T19:29:06.031446000 0.675659s info: Automatically using cache size of 1048 MB
+2015-07-25T19:29:06.033188000 0.677400s notice: Listening for intracluster connections on port 29015
+2015-07-25T19:29:06.036147000 0.680360s notice: Listening for client driver connections on port 28015
+2015-07-25T19:29:06.053952000 0.698165s error: Could not bind to http port: The address at localhost:8080 is reserved or already in use.
+2015-07-25T19:30:34.076318000 0.006547s notice: Running rethinkdb 2.0.4 (CLANG 4.2 (clang-425.0.28))...
+2015-07-25T19:30:34.080185000 0.010411s notice: Running on Darwin 14.3.0 x86_64
+2015-07-25T19:30:34.080213000 0.010438s notice: Loading data from directory /Users/jamesblack/src/emptyclipgaming/game/rethinkdb_data
+2015-07-25T19:30:34.117850000 0.048076s info: Automatically using cache size of 926 MB
+2015-07-25T19:30:34.118581000 0.048806s notice: Listening for intracluster connections on port 29015
+2015-07-25T19:30:34.120195000 0.050420s notice: Listening for client driver connections on port 28015
+2015-07-25T19:30:34.120302000 0.050527s notice: Listening for administrative HTTP connections on port 8080
+2015-07-25T19:30:34.120308000 0.050533s notice: Listening on addresses: 127.0.0.1, ::1
+2015-07-25T19:30:34.120312000 0.050537s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-07-25T19:30:34.120316000 0.050541s notice: Server ready, "Jamess_MacBook_Pro_3_local_oce" dd76a6cd-1f93-4ed7-b701-85ea11ef3501

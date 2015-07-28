@@ -1,4 +1,6 @@
-require('babel/register');
+require('babel/register')({
+  optional: ['es7.asyncFunctions']
+});
 var express = require('express');
 var path = require('path');
 var httpProxy = require('http-proxy');
@@ -25,7 +27,7 @@ if (!isProduction) {
 
   app.all('/build/*', function(req, res) {
     proxy.web(req, res, {
-      target: 'http://localhost:8080'
+      target: 'http://localhost:5080'
     });
   });
 }
